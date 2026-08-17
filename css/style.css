@@ -174,7 +174,7 @@ footer img {
     display: block;
     height: auto;
     margin-bottom: 22px;
-    max-width: 170px;
+    max-width: 130px;
 }
 
 .copyright {
@@ -252,5 +252,9 @@ footer img {
     display: grid;
     gap: 22px;
     grid-template-columns: repeat(3, 1fr);
+    }
+
+    footer img {
+    max-width: 170px;
     }
 }
