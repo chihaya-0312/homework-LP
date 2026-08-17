@@ -1,0 +1,256 @@
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    color: #fff;
+    font-family: "Martel", "Hiragino Mincho ProN", serif;
+    line-height: 1.8;
+    overflow-x: hidden;
+}
+
+img {
+    max-width: 100%;
+}
+
+h1, h2 {
+    font-weight: 400;
+    letter-spacing: .08em;
+    line-height: 1.2;
+}
+
+.section-inner {
+    margin: 0 auto;
+    max-width: 1120px;
+    padding-left: 22px;
+    padding-right: 22px;
+}
+
+.chocolate{
+    background-color: #463333;
+}
+
+/*ファーストビュー*/
+.hero { 
+    background-color: #B45656;
+    background-image: url(../img/firstview_s.png);
+    background-size: cover;
+    background-position: center;
+    height: 100svh;
+    min-height: 560px;
+}
+
+.hero img {
+    display: block;
+    height: 100%;
+    object-fit: cover;
+    object-position: center;
+    width: 100%;
+}
+
+
+/*真ん中*/
+h1 {
+    font-size: 45px;
+}
+
+.syouhin {
+    min-height: 780px;
+    overflow: hidden;
+    text-align: center;
+}
+
+.syouhin__inner {
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+    padding-bottom: 100px;
+    padding-top: 110px;
+}
+
+.syouhin img{
+    display: block;
+    object-fit: cover;
+    width: 500px;
+    height: 500px;
+}
+
+.setumei {
+    color: #fff;
+    font-size: 13px;
+}
+
+/*キャッチコピーと画像*/
+.story {
+    padding: 0 0 80px;
+}
+
+.story-visual {
+    height: 600px;
+    margin: 0 auto;
+    max-width: 820px;
+    position: relative;
+}
+
+.story-image {
+    width: 220px;
+    height: 220px;
+    border-radius: 100%;
+    overflow: hidden;
+    position: absolute;
+}
+
+.story-image img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.story-image--left {
+    left: 4%;
+    transform: scaleX(-1);
+}
+
+.story-image--right {
+    right: 4%;
+    top: 500px;
+}
+
+.story-copy {
+    font-size: 30px;
+    letter-spacing: .13em;
+    line-height: 1.7;
+    position: absolute;
+    text-align: center;
+    top: 300px;
+    left: 25%;
+    z-index: 2;
+}
+
+/*ラインナップ*/
+
+.lineup {
+    padding: 90px 0 90px;
+}
+
+h2 {
+    color: #463333;
+    font-size: 40px;
+    margin: 40px 0 70px;
+    text-align: center;
+}
+
+.lineup-grid {
+    display: grid;
+    gap: 2rem 1.5rem;
+    grid-template-columns: repeat(1, 1fr);
+}
+
+.lineup-card {
+    border-radius: 25px;
+    corner-shape: scoop;
+    align-items: flex-end;
+    aspect-ratio: 1;
+    display: flex;
+    overflow: hidden;
+    position: relative;
+    transition: transform .3s ease;
+}
+
+.lineup-card:hover {
+    transform: translateY(-8px);
+}
+
+/*フッター*/
+footer {
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+    padding: 65px 20px 25px;
+    text-align: center;
+}
+
+footer img {
+    display: block;
+    height: auto;
+    margin-bottom: 22px;
+    max-width: 170px;
+}
+
+.copyright {
+    color: #000;
+    font-family: Arial, sans-serif;
+    font-size: 10px;
+    letter-spacing: .08em;
+}
+
+
+/*レスポンシブPC向け*/
+@media (min-width: 1024px) {
+    .hero{
+        background-image: url(../img/firstview.png);
+    }
+
+    h1 {
+    font-size: 90px;
+    }
+
+    .section-inner {
+        padding-left: 40px;
+        padding-right: 40px;
+    }
+
+    .shouhin img{
+        width: 600px;
+        height: 600px;
+    }
+
+    .setumei {
+        font-size: 20px;
+    }
+
+    /*キャッチコピーと画像*/
+    .story {
+        padding: 150px 0 120px;
+    }
+
+    .story-visual {
+        height: 430px;
+    }
+
+    .story-image {
+        width: 600px;
+        height: 600px;
+    }
+
+    .story-image--left {
+        left: -40%;
+    }
+
+    .story-image--right {
+        right: -40%;
+        top: 60%;
+    }
+
+    .story-copy {
+        font-size: 50px;
+        text-align: left;
+        top: 60%;
+    }
+
+    /*ラインナップ*/
+    h2{
+        font-size: 60px;
+        margin: 30px 0 100px;
+    }
+
+    .lineup {
+    padding: 150px 0 150px;
+    }
+
+    .lineup-grid {
+    display: grid;
+    gap: 22px;
+    grid-template-columns: repeat(3, 1fr);
+    }
+}
